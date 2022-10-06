@@ -1,0 +1,27 @@
+.active-light {
+    background-color: $primary-color;
+    color: darken($dark-color, 20);
+}
+
+.active-dark {
+    background-color: #6e8e8b;
+    color: white;
+}
+
+.inactive-light {
+    background-color: transparent;
+    color: darken($dark-color, 20);
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
+
+.inactive-dark {
+    background-color: transparent;
+    color: white;
+
+    &:hover {
+        background-color: #6e8e8b;
+    }
+}

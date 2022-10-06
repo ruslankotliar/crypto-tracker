@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 20rem;
+    position: fixed;
+    z-index: 5;
+    transition: 0.3s ease-in-out;
+
+    &-logo {
+        color: darken($dark-color, 20);
+        font-size: 2rem;
+        font-weight: 600;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-nav-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &-item {
+            list-style-type: none;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-size: 1.25rem;
+            padding: .75rem 1rem;
+            border-radius: 40px;
+            font-weight: 400;
+            transition: opacity 0.5s ease-in-out;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+

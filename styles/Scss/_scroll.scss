@@ -1,0 +1,26 @@
+.scroll {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 92.5vh;
+    font-size: 5rem;
+    color: black;
+    z-index: 20;
+    color: #80ced6;
+    transition: all ease-in-out;
+    animation: scroll-scale 1s ease-in-out infinite;
+    opacity: .5;
+}
+
+@keyframes scroll-scale {
+    75% {
+        top: 95vh;
+        font-size: 6rem;
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: .5;
+    }
+}

@@ -1,0 +1,83 @@
+.stats {
+    margin: 3rem 0;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 1rem;
+        font-weight: 200;
+        color: $dark-color;
+        margin-bottom: 2rem;
+    }
+
+    &-chart {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    &-time {
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: .25rem;
+    }
+
+    &-currencies {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+
+        &-c {
+            background-color: $dark-color;
+            padding: 2rem;
+            color: $primary-color;
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all ease-in .5s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            h4 {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 200rem;
+                margin-top: 0;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 400;
+                margin-bottom: 1rem;                
+            }
+
+
+        }
+    }
+
+    &-description {
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 3rem;
+    }
+}
+
+.no-hover:hover {
+    transform: none;
+    cursor: auto;
+}
